@@ -9,9 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/icons": "^3.7.0",
+    "@sanity/image-url": "1",
+    "@sanity/vision": "3",
     "next": "15.2.2",
+    "next-sanity": "9",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "sanity": "3",
+    "styled-components": "6",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -25,5 +32,13 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.0.14",
     "typescript": "^5"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "scrollmirror",
+      "sharp",
+      "yarn"
+    ]
   }
 }

@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const ContactSection = () => {
   return (
-    <section className="flex w-full gap-20 px-20">
-      <div className="flex flex-col items-start justify-around h-full text-start">
-        <div className="flex flex-col gap-2">
+    <section className="flex w-full gap-20 px-20 ">
+      <div className="flex flex-col items-start justify-between text-start">
+        <div className="flex flex-col gap-3">
           <h2 className="text-4xl font-bold">Stay Updated with Tech News</h2>
 
           {/* Section Description */}
@@ -20,7 +20,7 @@ const ContactSection = () => {
           <input
             type="email"
             placeholder="Enter your email"
-            className="w-1/2 p-2 border border-gray-300 rounded"
+            className="w-2/3 p-2 border border-gray-600 rounded"
           />
           <button className="px-4 py-2 font-bold text-white bg-blue-500 rounded cursor-pointer hover:bg-blue-700">
             Subscribe

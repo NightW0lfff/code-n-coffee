@@ -29,7 +29,7 @@ const NewsSection = () => {
   return (
     <section className="flex flex-col items-center gap-2 text-center">
       {/* Section Title */}
-      <h4 className="mb-12 text-sm tracking-widest uppercase">News</h4>
+      <h4 className="mb-8 text-sm tracking-widest uppercase">News</h4>
       <h2 className="text-4xl font-bold">
         Stay Ahead with the Latest Tech Trends
       </h2>

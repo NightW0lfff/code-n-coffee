@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const blogData = [
   {
@@ -22,7 +23,7 @@ const BlogSection = () => {
   return (
     <section className="flex flex-col items-center w-full gap-2 text-center">
       {/* Section Title */}
-      <h4 className="mb-12 text-sm tracking-widest uppercase">Blog</h4>
+      <h4 className="mb-8 text-sm tracking-widest uppercase">Blog</h4>
       <h2 className="text-4xl font-bold">Discover the Latest Tech Insights</h2>
 
       {/* Section Description */}
@@ -75,9 +76,12 @@ const BlogSection = () => {
 
       {/* CTA Button */}
       {/* <div className="flex justify-end w-full px-20"> */}
-      <button className="pt-12 tracking-wider text-white underline rounded-full cursor-pointer bg-primary underline-offset-4">
+      <Link
+        href="#"
+        className="pt-12 tracking-wider underline rounded-full cursor-pointer underline-offset-4 hover:text-[var(--accent)]"
+      >
         Read More
-      </button>
+      </Link>
       {/* </div> */}
     </section>
   );

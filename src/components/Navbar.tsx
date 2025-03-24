@@ -2,27 +2,30 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center py-8 w-full ">
+    <div className="flex items-center justify-between w-dvw py-10 px-16 bg-[var(--foreground)]">
       <a href="#">
-        <h1 className="font-bold text-3xl">Code&Coffee</h1>
+        <h1 className="text-3xl font-bold text-[var(--logo)]">Code&Coffee</h1>
       </a>
       <nav>
-        <ul className="flex justify-between items-center w-80">
-          <li>
+        <ul className="flex items-center justify-between gap-8 ">
+          <li className="text-[var(--text-light)]">
             <a href="#">Home</a>
           </li>
-          <li>
-            <a href="#">About</a>
+          <li className="text-[var(--text-light)]">
+            <a href="#">News</a>
           </li>
-          <li>
-            <a href="#">Services</a>
+          <li className="text-[var(--text-light)]">
+            <a href="#">Blogs</a>
           </li>
-          <li>
+          <li className="text-[var(--text-light)]">
+            <a href="#">Categories</a>
+          </li>
+          <li className="text-[var(--text-light)]">
             <a href="#">Contact</a>
           </li>
         </ul>
       </nav>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded cursor-pointer">
+      <button className=" px-4 py-2 font-bold bg-[var(--accent)] text-white rounded cursor-pointer hover:bg-[var(--accent-hover)]">
         Join
       </button>
     </div>

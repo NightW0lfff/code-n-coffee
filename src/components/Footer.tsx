@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center justify-between w-full h-40">
-      <div className="flex flex-col items-center gap-4">
+    <footer className="flex flex-col items-center justify-between w-full mt-20 h-50">
+      <div className="flex flex-col items-center gap-8">
         <a href="#">
           <h1 className="text-3xl font-bold">Code&Coffee</h1>
         </a>
@@ -21,13 +21,13 @@ const Footer = () => {
         </p>
 
         <ul className="flex gap-8 underline underline-offset-3">
-          <li>
+          <li className=" hover:text-[var(--accent)]">
             <a href="#">Privacy Policy</a>
           </li>
-          <li>
+          <li className=" hover:text-[var(--accent)]">
             <a href="#">Terms of Service</a>
           </li>
-          <li>
+          <li className=" hover:text-[var(--accent)]">
             <a href="#">Cookies Settings</a>
           </li>
         </ul>

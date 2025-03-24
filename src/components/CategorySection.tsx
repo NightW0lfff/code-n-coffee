@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const categories = [
   {
@@ -36,7 +37,7 @@ const CategorySection = () => {
   return (
     <section className="flex flex-col items-center w-full gap-2 text-center">
       {/* Section Title */}
-      <h4 className="mb-12 text-sm tracking-widest uppercase">Category</h4>
+      <h4 className="mb-8 text-sm tracking-widest uppercase">Category</h4>
       <h2 className="text-4xl font-bold">Explore Our Categories</h2>
 
       {/* Section Description */}
@@ -72,17 +73,23 @@ const CategorySection = () => {
                   {blog.description}
                 </p>
               </div>
-              <button className="tracking-wider text-white underline rounded-full cursor-pointer bg-primary underline-offset-4 text-start">
+              <Link
+                href="#"
+                className="hover:text-[var(--accent)] tracking-wider underline rounded-full cursor-pointer underline-offset-4 text-start"
+              >
                 Read More &rarr;
-              </button>
+              </Link>
             </div>
           </div>
         ))}
       </div>
 
-      <button className="pt-12 tracking-wider text-white underline rounded-full cursor-pointer bg-primary underline-offset-4">
+      <Link
+        href="#"
+        className="pt-12 tracking-wider underline rounded-full cursor-pointer underline-offset-4 hover:text-[var(--accent)]"
+      >
         View All Categories
-      </button>
+      </Link>
     </section>
   );
 };
