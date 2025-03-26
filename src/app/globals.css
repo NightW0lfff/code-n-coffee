@@ -1,40 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@700&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #e1ddd2;
-  --foreground: #31251d;
-  --logo: #dd672f;
-  --text-light: #f7f2dd;
-  --heading: #18181b;
-  --accent: #865233;
-  --accent-hover: #7e3608;
-  --accent-light: #e1c19a;
-  --soft-teal: #0d9488;
-  --muted-blue: #0284c7;
-
+@theme {
+	--background: #e1ddd2;
+	--foreground: #31251d;
+	--logo: #dd672f;
+	--text-light: #f7f2dd;
+	--heading: #18181b;
+	--accent: #865233;
+	--accent-hover: #7e3608;
+	--accent-light: #e1c19a;
+	--soft-teal: #0d9488;
+	--muted-blue: #0284c7;
 }
 
+:root {
+	--font-brand: "Space Grotesk", sans-serif;
+	--font-body: "Inter", system-ui, sans-serif;
+}
 
 button {
-  background: var(--accent);
-  color: var(--text-light);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: background 0.2s;
+	background: var(--accent);
+	color: var(--text-light);
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	transition: background 0.2s;
 }
 
 h4 {
-  color: var(--accent);
-  font-weight: bold;
-
+	color: var(--accent);
+	font-weight: bold;
 }
 
 button:hover {
-  background: var(--accent-hover);
+	background: var(--accent-hover);
 }
-
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -49,13 +51,12 @@ button:hover {
 } */
 
 html {
-  font-size: 16px;
-  box-sizing: border-box;
+	font-size: 16px;
+	box-sizing: border-box;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: system-ui,
-    sans-serif;
+	background: var(--background);
+	color: var(--foreground);
+	font-family: var(--font-body);
 }
