@@ -4,9 +4,7 @@ const Navbar = () => {
 	return (
 		<div className="flex items-center justify-between w-dvw py-10 px-16 bg-[var(--foreground)]">
 			<a href="#">
-				<h1 className="text-3xl text-[var(--logo)] font-(family-name:--font-brand) font-[700]">
-					&lt;Code&Coffee/&gt;
-				</h1>
+				<h1 className="text-3xl font-bold text-[var(--logo)]">Code&Coffee</h1>
 			</a>
 			<nav>
 				<ul className="flex items-center justify-between gap-8 ">

@@ -40,7 +40,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 							loop: true,
 							delay: 70,
 							deleteSpeed: 30,
-							wrapperClassName: "text-2xl font-medium text-[var(--heading)] ",
+							wrapperClassName:
+								"text-2xl font-medium text-[var(--heading)] tracking-wider ",
 							cursorClassName: "text-2xl font-light animate-ping",
 						}}
 					/>
