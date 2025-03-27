@@ -5,8 +5,6 @@ import Image from "next/image";
 import Typewriter from "typewriter-effect";
 
 interface HeroSectionProps {
-	title: string;
-	description: string;
 	image: string;
 }
 
@@ -19,11 +17,7 @@ const headlines = [
 	"Fuel Your Dream. And Your Code",
 ];
 
-const HeroSection: React.FC<HeroSectionProps> = ({
-	title,
-	description,
-	image,
-}) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ image }) => {
 	return (
 		<section className="flex flex-col items-center text-center">
 			<h1 className="text-6xl font-semibold w-2/4 leading-snug text-[var(--heading)] font-(family-name:--font-brand)">
@@ -48,7 +42,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 				</span>
 			</h2>
 			<p className="w-2/4 mx-auto mb-6 text-lg italic font-medium">
-				" A community of developers who love to code and drink coffee. "
+				&ldquo;A community of developers who love to code and drink
+				coffee.&rdquo;
 			</p>
 			<div className="flex justify-center gap-4 py-4 mb-30">
 				<button className="px-4 py-2 font-bold rounded cursor-pointer bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)]">
