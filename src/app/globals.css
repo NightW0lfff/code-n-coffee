@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Space+Grotesk:wght@700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -15,9 +14,6 @@
 	--accent-light: #e1c19a;
 	--soft-teal: #0d9488;
 	--muted-blue: #0284c7;
-
-	--font-brand: "Space Grotesk", sans-serif;
-	--font-body: "Inter", system-ui, sans-serif;
 
 	--radius: 0.625rem;
 	--card: #f5f2eb;
