@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Typewriter from "typewriter-effect";
+import { Button } from "@/components/ui/button";
 
 interface HeroSectionProps {
 	image: string;
@@ -19,46 +20,44 @@ const headlines = [
 
 const HeroSection: React.FC<HeroSectionProps> = ({ image }) => {
 	return (
-		<section className="flex flex-col items-center text-center">
-			<h1 className="text-6xl font-semibold w-2/4 leading-snug text-[var(--heading)] font-(family-name:--font-brand)">
+		<section className="flex flex-col items-center w-full text-center">
+			<h1 className="text-6xl tracking-tighter font-semibold w-2/4 leading-snug text-[var(--heading)] font-(family-name:--font-brand)">
 				Code & Coffee
 			</h1>
 
-			<h2 className="w-2/4 mb-6 ">
-				<span>
-					<Typewriter
-						options={{
-							strings: headlines,
-							cursor: "_",
-							autoStart: true,
-							loop: true,
-							delay: 70,
-							deleteSpeed: 30,
-							wrapperClassName:
-								"text-2xl font-medium text-[var(--heading)] tracking-wider ",
-							cursorClassName: "text-2xl font-light animate-ping",
-						}}
-					/>
-				</span>
+			<h2 className="mb-6 m-w-3/5 w-fit ">
+				<Typewriter
+					options={{
+						strings: headlines,
+						cursor: "_",
+						autoStart: true,
+						loop: true,
+						delay: 70,
+						deleteSpeed: 30,
+						wrapperClassName:
+							"text-2xl font-medium text-[var(--heading)] tracking-wider ",
+						cursorClassName: "text-2xl font-light animate-ping",
+					}}
+				/>
 			</h2>
 			<p className="w-2/4 mx-auto mb-6 text-lg italic font-medium">
 				&ldquo;A community of developers who love to code and drink
 				coffee.&rdquo;
 			</p>
 			<div className="flex justify-center gap-4 py-4 mb-30">
-				<button className="px-4 py-2 font-bold rounded cursor-pointer bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)]">
+				<Button className=" font-bold   bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)]">
 					Sign Up
-				</button>
-				<button className="px-4 py-2 font-semibold !bg-white !border !border-[var(--accent)] !text-[var(--accent)] rounded cursor-pointer hover:!bg-[var(--accent-light)] hover:!text-[var(--accent)] hover:!border-transparent">
+				</Button>
+				<Button className=" font-semibold !bg-white !border !border-[var(--accent)] !text-[var(--accent)]   hover:!bg-[var(--accent-light)] hover:!text-[var(--accent)] hover:!border-transparent">
 					Learn More
-				</button>
+				</Button>
 			</div>
 			<Image
 				src={image}
 				alt="Hero Image"
 				width={1400}
 				height={800}
-				className="mx-auto bg-slate-400"
+				className="w-full mx-auto bg-slate-400"
 			/>
 		</section>
 	);

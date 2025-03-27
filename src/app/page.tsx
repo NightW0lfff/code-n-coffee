@@ -8,7 +8,7 @@ import NewsSection from "@/components/NewsSection";
 
 export default function Home() {
 	return (
-		<div className="container flex flex-col items-center gap-32 mx-auto mb-8">
+		<div className="container flex flex-col items-center gap-32 mx-auto mb-8 max-w-dvw w-[90dvw]">
 			<Navbar />
 			<HeroSection image="/images/hero.jpg" />
 			<NewsSection />
